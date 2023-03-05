@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* The side navigation menu */
+.sidebar {
+  background-image: url(/image/bg-2.jfif);
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #424247;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar img{
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 50%;
+}
+@media screen and (max-width: 700px) {
+  .sidebar img {
+   display: none;
+  }
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: rgb(243, 234, 234);
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #ecf2f3;
+  color: rgb(19, 18, 18);
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: rgb(20, 191, 221);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+    padding: auto;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.header  .content{
+  width: 100%;
+}
+
+.header .name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 60px;
+  font-weight: 20;
+  color: rgb(216, 215, 213);
+}
+
+.header h4 {
+  color: rgb(237, 243, 243);
+}
+
+.header .lead {
+  font-size: 150%;
+  color: rgb(236, 250, 42);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.content {
+  background-image: url(image/laptop.avif);
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+  margin: 0;
+
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    background-size: 100% 75%;
+  }
+}
+
+.row {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.row h2{
+  margin-top: 200px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  color: rgb(47, 121, 218);
+}
+.ch-mr {
+
+  border: 1px solid black;
+  border-radius: 12px;
+  background-image: url(image/wood.avif);
+  background-size: cover;
+  width: 250px;
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(236, 236, 231);
+  height: auto;
+}
+.top-ch{
+  border: 1px solid black;
+  border-radius: 12px;
+  background-image: url(image/wood.avif);
+  background-size: cover;
+  width: 250px;
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(236, 236, 231);
+  height: auto;
+
+}
+
+.br, .br img{
+  border: 1px solid black;
+  border-radius: 9px;
+}
+.col{
+  width: 250px;
+  margin: 8px;
+  padding: 0%;
+  margin-top: 50px;
+}
