@@ -127,7 +127,7 @@ div.content {
   justify-content: center;
 
 }
-.row h2{
+.start h2{
   margin-top: 200px;
   text-align: center;
   border-bottom: 1px solid black;
@@ -169,4 +169,13 @@ div.content {
   margin: 8px;
   padding: 0%;
   margin-top: 50px;
+}
+.dream-ach h2{
+  margin-top: 50px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  color: rgb(47, 121, 218);
+
 }
