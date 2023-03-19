@@ -152,19 +152,21 @@ div.content {
 .about .skill,
 .about .exp {
   border: 1px dotted coral;
-  background-color: rgb(8, 218, 218);
-  width: 600px;
-  color: #ecf2f3;
-  border-radius: 12px;
+  background-color: rgb(244, 247, 247);
+  width: 300px;
+  color: #5f6161;
+  border-radius: 9px;
   height: 300px;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 500;
-  border-left: 4px solid black;
-  border-right: 4px solid black;
+  border: 1px solid black;
+  /* border-left: 4px solid black;
+  border-right: 4px solid black; */
   font-family: 'Lato', sans-serif;
   font-family: 'Moon Dance', cursive;
   margin: 5px;
   min-width: 250px;
+  line-height: 50px;
 
 
 }
@@ -176,6 +178,16 @@ div.content {
   .about .exp {
     width: 250px;
   }
+}
+
+.about .edu:hover,
+.about .skill:hover,
+.about .exp:hover {
+  width: 305px;
+  box-shadow: 10px 10px 5px rgb(143, 141, 141);
+  cursor: pointer;
+
+
 }
 
 .about p {
@@ -194,7 +206,9 @@ div.content {
   color: rgb(236, 121, 14);
 }
 
-.start h2, .project h2 , h2{
+.start h2,
+.project h2,
+h2 {
   margin-top: 50px;
   text-align: center;
   border-bottom: 1px solid black;
@@ -203,34 +217,43 @@ div.content {
   color: rgb(47, 121, 218);
 }
 
-.col-md-4:hover {
+.top-ch:hover,
+.ch-mr:hover {
   width: 252px;
   box-shadow: 10px 10px 5px rgb(102, 101, 101);
+  cursor: pointer;
 }
 
 .ch-mr {
 
   border: 1px solid black;
-  border-radius: 12px;
-  background-image: url(image/wood.avif);
+  border-radius: 9px;
+  background-color: #3F979B;
+  /* background-image: url(image/wood.avif); */
   background-size: cover;
   width: 250px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
   margin-top: 50px;
   text-align: center;
-  color: rgb(236, 236, 231);
+  color: rgb(14, 14, 13);
   height: auto;
 
 }
 
 .top-ch {
   border: 1px solid black;
-  border-radius: 12px;
-  background-image: url(image/wood.avif);
+  border-radius: 9px;
+  background-color: #3F979B;
+  /* background-image: url(image/wood.avif); */
+  border-left: 1px solid black;
+  border-right: 1px solid black;;
   background-size: cover;
   width: 250px;
   margin-top: 50px;
   text-align: center;
-  color: rgb(236, 236, 231);
+  color: rgb(12, 12, 12);
   height: auto;
   margin: 0;
   display: flex;
@@ -266,6 +289,7 @@ div.content {
 .co:hover {
   width: 252px;
   box-shadow: 10px 10px 5px rgb(94, 92, 92);
+  cursor: pointer;
 }
 
 .bg1 {
@@ -321,7 +345,8 @@ div.content {
   margin-top: 100px;
 
 }
-.bg5{
+
+.bg5 {
   width: 450px;
   background-color: rgb(244, 246, 248);
   text-align: center;
@@ -333,15 +358,18 @@ div.content {
   padding: 0%;
   margin-top: 50px;
 }
-.bg5 a{
+
+.bg5 a {
   text-decoration: none;
   color: black;
   font-size: 30px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
-}.bg6 a{
+
+}
+
+.bg6 a {
   text-decoration: none;
-  color:white;
+  color: white;
   font-size: 30px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -356,21 +384,107 @@ div.content {
   margin: 8px;
   padding: 0%;
   margin-top: 50px;
+
 }
-.bg5:hover,.bg6:hover{
+
+@media screen and (max-width: 700px) {
+
+  .bg4,
+  .bg5,
+  .bg6 {
+    width: 250px;
+  }
+}
+
+.bg5:hover,
+.bg6:hover {
   width: 452px;
   box-shadow: 10px 10px 5px rgb(94, 92, 92);
+  cursor: pointer;
 }
-.contact{
+
+.contact {
   width: 800px;
   min-width: 350px;
   justify-content: center;
 }
-.wid70{
+
+.wid70 {
   margin-top: 50px;
   width: 70%;
+
 }
-.wid30{
+
+.wid30 {
   margin-top: 100px;
   width: 30%;
+
+}
+
+@media screen and (max-width: 700px) {
+  .wid30 {
+    justify-self: center;
+  }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border-radius: 50%;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  border-radius: 50%;
+}
+
+.fa-instagram {
+  background: #f13857;
+  color: rgb(221, 241, 39);
+  border-radius: 50%;
+}
+
+.fa-github {
+  background: #fdfbfb;
+  color: rgb(8, 8, 8);
+  border-radius: 50%;
+}
+
+.fa-linkedin {
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+
+.pad {
+  line-height: 50px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #3F979B;
+  color: #050505;
+  padding: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.pad h3 {
+  font-size: 40px;
+  color: aqua;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
